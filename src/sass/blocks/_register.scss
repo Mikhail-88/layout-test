@@ -1,0 +1,69 @@
+.register {
+    padding: 79px 0 86px 0;
+    background: url(../../img/register_bg.jpg) center (center/cover) no-repeat;
+}
+
+.form {
+    max-width: 460px;
+    background-color: $white-color;
+    padding: 26px 80px;
+    margin: 0 auto;
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+    }
+  
+    &__title {
+        text-align: center;
+        @include font-style(100, 35px, 32px);
+        color: $title-color;
+        margin-bottom: 23px;
+    }
+  
+    &__input {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 10px;
+        padding: 0 20px;
+        background-color: $input-bg-color;
+        box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
+        border: 1px solid transparent;
+        border-radius: 5px;
+        @include font-style(300, 20px, 32px);
+        color: $text-color;
+        transition: all 0.4s ease;
+    
+        &::placeholder {
+            color: $title-color;
+        }
+    
+        &:hover,
+        &:focus {
+            border-color: $main-color;
+            outline: none;
+        }
+    }
+
+    &__button {
+        align-self: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .register {
+        padding: 80px 20px;
+    }
+
+    .form {
+        padding: 26px 20px;
+
+        &__title {
+            font-size: 25px;
+        }
+
+        &__input {
+            font-size: 15px;
+        }
+    }
+}

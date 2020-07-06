@@ -1,0 +1,30 @@
+.button {
+    border-radius: 5px;
+    background-color: $btn-color;
+    border: transparent;
+    color: $white-color;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease;
+
+    &:hover {
+        background-color: $btn-hover-color;
+    }
+
+    &:active {
+        transform: scale(0.8);
+    }
+
+    &__main {
+        max-width: 90px;
+        padding: 0 22px;
+        @include font-style(500, 15px, 32px);
+    }
+
+    &__slider {
+        padding: 13px 23px;
+        @include font-style(400, 20px, 32px);
+    }
+}

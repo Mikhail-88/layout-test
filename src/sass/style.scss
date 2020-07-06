@@ -1,0 +1,20 @@
+@import 'normalize/bootstrap-reboot.min';
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/slider';
+@import 'blocks/buttons';
+@import 'blocks/about';
+@import 'blocks/register';
+@import 'blocks/footer';

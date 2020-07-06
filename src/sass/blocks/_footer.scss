@@ -1,0 +1,10 @@
+.footer {
+    height: 44px;
+    background-color: $main-color;
+    @include flex-centered;
+
+    &__title {
+        @include font-style(300, 15px, 32px);
+        color: $white-color;
+    }
+}
